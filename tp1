@@ -1,0 +1,139 @@
+/home/tomas/Downloads/Celular/Baseband_change(EP93_U_00.59.01).zip
+/home/tomas/Downloads/Celular/Defy senal 4.4.rar
+/home/tomas/Downloads/Celular/defy_twrp_recovery_2.6.3.0.zip
+/home/tomas/Downloads/Celular/gapps-kk-20141215-minimal-edition-gps030-universaldpi_signed.zip
+/home/tomas/Downloads/Celular/ICS_Defy_softunlock_v1.3(EPU_U_00.59.01).zip
+/home/tomas/Downloads/Celular/new_boostrap.zip
+/home/tomas/Downloads/Celular/resize.zip
+/home/tomas/Downloads/Celular/safewipe.zip
+
+#!/bin/bash
+for i in {1..8}
+do
+  time parallel $i "gzip -d" 1.zip 2.zip 3.zip 4.zip 5.zip 6.zip 7.zip 8.zip > testOutput.txt
+done
+
+1
+	2.062s
+	1.110s
+	0.142s
+
+2
+	0.628s
+	1.035s
+	0.163s
+
+3
+	0.562s
+	1.080s
+	0.113s
+
+4
+	0.542s
+	1.102s
+	0.126s
+
+5
+	0.548s
+	1.119s
+	0.115s
+
+6
+	0.539s
+	1.143s
+	0.131s
+
+7
+	0.540s
+	1.093s
+	0.149s
+
+8
+	0.532s
+	1.110s
+	0.164s
+
+
+Test 1
+
+	12.703s
+	0.014s
+	0.035s
+Test 2
+
+	10.507s
+	0.003s
+	0.044s
+Test 3
+
+	10.286s
+	0.014s
+	0.038s
+Test 4
+
+	10.301s
+	0.008s
+	0.044s
+Test 5
+
+	10.066s
+	0.008s
+	0.040s
+Test 6
+
+	10.072s
+	0.010s
+	0.041s
+Test 7
+
+	10.016s
+	0.007s
+	0.027s
+Test 8
+
+	10.013s
+	0.010s
+	0.032s
+
+execve("./parallel", ["./parallel", "4", "ping -c 1", "google.com", "yahoo.com", "bing.com", "gmail.com"], [/* 75 vars */]) = 0
+brk(0)                                  = 0x179c000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6317ed9000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=140745, ...}) = 0
+mmap(NULL, 140745, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6317eb6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\37\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1840928, ...}) = 0
+mmap(NULL, 3949248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f63178f4000
+mprotect(0x7f6317aaf000, 2093056, PROT_NONE) = 0
+mmap(0x7f6317cae000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7f6317cae000
+mmap(0x7f6317cb4000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6317cb4000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6317eb5000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6317eb3000
+arch_prctl(ARCH_SET_FS, 0x7f6317eb3740) = 0
+mprotect(0x7f6317cae000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7f6317edb000, 4096, PROT_READ) = 0
+munmap(0x7f6317eb6000, 140745)          = 0
+fstat(1, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6317ed8000
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6317eb3a10) = 6569
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6317eb3a10) = 6570
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6317eb3a10) = 6571
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6317eb3a10) = 6572
+wait4(-1, NULL, 0, NULL)                = 6569
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6569, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, NULL, 0, NULL)                = 6571
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6571, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, NULL, 0, NULL)                = 6572
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6572, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, NULL, 0, NULL)                = 6570
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6570, si_status=0, si_utime=0, si_stime=0} ---
+write(1, "4\n\nChild 6569 Complete\n\nChild 65"..., 86) = 86
+exit_group(0)                           = ?
++++ exited with 0 +++

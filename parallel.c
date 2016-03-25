@@ -21,7 +21,6 @@ int main(int argc, char *argv[]) {
 			fprintf(stderr, "Error at child process creation\n");
 			return 1;
 		} else if (pid == 0) {
-			//TODO I am the child
 			runProgram(program, argv[i + 3]);
 		} else {
 			running++;
